@@ -8,6 +8,20 @@
 import UIKit
 
 class MessageViewCell: UITableViewCell {
+    
+    
+    
+    @IBOutlet var receiveLabel: UILabel!
+    
+    @IBOutlet var sendLabel: UILabel!
+    
+    
+    func render(message: Message) {
+            sendLabel.text = message.message
+        }
+    
+    
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()

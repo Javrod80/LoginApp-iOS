@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+
+struct Message : Codable {
+    
+    
+    var message: String
+    var date: Double
+    var senderId: String
+    
+  
+}

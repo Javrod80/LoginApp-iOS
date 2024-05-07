@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+
+struct User : Codable {
+    
+    var id: String
+    var username: String
+    var profileImage: String?
+    var senderId: String
+    
+    
+}
+

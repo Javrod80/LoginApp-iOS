@@ -6,3 +6,21 @@
 //
 
 import Foundation
+import FirebaseFirestore
+
+
+struct Chat: Codable {
+    
+    var id: String
+    var name: String
+
+}
+
+
+
+
+
+
+
+
+

@@ -6,18 +6,34 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
+import FirebaseStorage
 
 class ChatViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    
+    @IBOutlet var imageChatUser: UIImageView!
+    
+    @IBOutlet var nameChatUser: UILabel!
+    
+    @IBOutlet var descriptionLabel: UILabel!
+    
+    
+    
+    
+    func render (chat: Chat) {
+        
+        nameChatUser.text = chat.name
+   
+        
+       
+        
+        
+        
+        
+        
+        
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
